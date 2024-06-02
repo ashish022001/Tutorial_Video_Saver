@@ -40,7 +40,7 @@ const AddVideos = () =>
                         <dt>Views</dt>
                         <dd><input type="text" name="views"  onChange={formik.handleChange} /></dd>
                         <dt>Subscribed</dt>
-                        <dd className="form-switch"><input type="checkbox" className="form-check-input" name="subscribed" onChange={formik.handleChange} /></dd>
+                        <dd className="form-switch"><input type="checkbox" checked={formik.values.subscribed} className="form-check-input" name="subscribed" onChange={formik.handleChange} /></dd>
 
                     </dl>
                     <button className="btn btn-primary">Add Video</button>

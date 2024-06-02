@@ -8,6 +8,8 @@ import Error from "./Error"
 import Manage from "./Manage"
 import VideoDetails from "./VideoDetails"
 import AddVideos from "./AddVideos"
+import DeleteVideo from "./DeleteVideos"
+import EditVideo from "./EditVideo"
 function Index() {
         return(
             <div className="container-fluid">
@@ -47,7 +49,9 @@ function Index() {
                             <Route path='/error' Component={Error}/>
                             <Route path="/manage" Component={Manage}/>
                             <Route path="/details/:id" Component={VideoDetails}/>
-                            <Route path="addvideo" Component={AddVideos}/>
+                            <Route path="/addvideo" Component={AddVideos}/>
+                            <Route path="delete/:id" Component={DeleteVideo}/>
+                            <Route path="edit/:id" Component={EditVideo}/>
                         </Routes>
                     </main>
                 </section>

@@ -41,10 +41,10 @@ const Manage= ()=>{
                                     <Link to={`/details/${video.id}`} className="btn btn-primary ms-2">
                                         <span className="bi bi-eye"></span> Details
                                     </Link>
-                                    <Link className="btn btn-warning ms-2">
+                                    <Link to={`/edit/${video.id}`} className="btn btn-warning ms-2">
                                         <span className="bi bi-eye"></span> Edit
                                     </Link>
-                                    <Link className="btn btn-danger ms-2">
+                                    <Link to={`/delete/${video.id}`} className="btn btn-danger ms-2">
                                         <span className="bi bi-trash"></span> Details
                                     </Link>
                                 </td>
